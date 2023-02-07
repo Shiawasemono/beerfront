@@ -52,7 +52,7 @@
     },
     methods: {
       getActiveDevices () {
-        axios.get("http://hestia:8080/activeDevices")
+        axios.get("http://hestia:8081/activeDevices")
            .then(data => {
               this.active.devices = data.data
             })

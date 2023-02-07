@@ -57,7 +57,7 @@
         this.currentTab.name = name
       },
       getiSpindels : async() => {
-        const {data: iSpindels} = await axios.get("http://hestia:8080/iSpindels")
+        const {data: iSpindels} = await axios.get("http://hestia:8081/iSpindels")
         return iSpindels
       },
       getActive : async() => {

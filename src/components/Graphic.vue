@@ -16,7 +16,7 @@ export default {
   },
 
   async created() {
-    const test = await axios.get("http://hestia:8080/historical/"+this.name+"/"+this.info)
+    const test = await axios.get("http://hestia:8081/historical/"+this.name+"/"+this.info)
     let allData = test.data
     this.createChart(allData.length, allData)
   },

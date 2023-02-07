@@ -99,7 +99,7 @@
       },
       async setActive () {
         this.active_button = !this.active_button
-        const test = await axios.post("http://hestia:8080/activateiSpindel", {"name": this.name, "time": Date.now(), "in_use": this.active_button})
+        const test = await axios.post("http://hestia:8081/activateiSpindel", {"name": this.name, "time": Date.now(), "in_use": this.active_button})
         this.active_devices.devices = test.data
       },
       checkIn (name, list) {
